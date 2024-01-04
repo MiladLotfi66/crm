@@ -26,7 +26,7 @@ const CustomerSchema = new Schema({
   },
   createdAt: {
     type: Date,
-    default: () => date.now(),
+    default: () => Date.now(),
     immutable: true,
   },
   upadtedAt: {
@@ -35,5 +35,5 @@ const CustomerSchema = new Schema({
   },
 }
 );
-const Customer = models.Customer || model(Customer,CustomerSchema);
+const Customer = models.Customer || model("Customer",CustomerSchema);
 export default Customer;
