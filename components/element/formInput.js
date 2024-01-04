@@ -1,4 +1,4 @@
-function formInput({ name, label, value, type, onChange }) {
+function FormInput({ name, label, value, type, onChange }) {
   return (
     <div className="form-input">
       <label htmlFor={name}>{label}</label>
@@ -13,4 +13,4 @@ function formInput({ name, label, value, type, onChange }) {
   );
 }
 
-export default formInput;
+export default FormInput;

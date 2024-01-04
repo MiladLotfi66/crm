@@ -1,8 +1,9 @@
+import ItemList from "./itemList"
 
-function Form() {
+function Form({form , setForm}) {
   return (
     <div>
-      Form
+      <ItemList form={form} setForm={setForm}/>
     </div>
   )
 }
