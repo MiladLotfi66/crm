@@ -15,7 +15,7 @@ try {
     res.status(200).json({status:"success",message:"delete customer success"})
 } catch (err) {
     console.log(err.message);
-    res.status(200).json({status:"success",message:"delete customer success"})
+    res.status(500).json({status:"filed",message:"delete customer filed"})
     
 }
   }
