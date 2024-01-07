@@ -1,8 +1,6 @@
 import FormInput from "../element/formInput"
 import ItemList from "./itemList"
 
-
-
 function Form({form , setForm}) {
 
 const changeHandler=(e)=>{
@@ -11,7 +9,7 @@ setForm({...form , [name]:value})
 };
     return (
     <div>
-        <FormInput name="name" label="name" value={form.value} type="text" onChange={(e)=>changeHandler(e)}/>
+        <FormInput name="name" label="name" value={form.name} type="text" onChange={(e)=>changeHandler(e)}/>
         <FormInput name="lastName" label="Last name" value={form.lastName} type="text" onChange={(e)=>changeHandler(e)}/>
         <FormInput name="email" label="Email" value={form.email} type="text" onChange={(e)=>changeHandler(e)}/>
         <FormInput name="phone" label="Phone" value={form.phone} type="text" onChange={(e)=>changeHandler(e)}/>

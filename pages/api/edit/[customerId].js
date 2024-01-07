@@ -22,12 +22,11 @@ try {
     customer.date=data.date;
     customer.products=data.products;
     customer.upadtedAt=Date.now();
-    customer.Save();
-
-    res.status(200).json({status:"success",message:"delete customer success"})
+    customer.save();
+    res.status(200).json({status:"success",message:"edit customer success"})
 } catch (err) {
     console.log(err.message);
-    res.status(500).json({status:"FILED",message:"delete customer FILED"})
+    res.status(500).json({status:"FILED",message:"edit customer FILED"})
     
 }
   }
